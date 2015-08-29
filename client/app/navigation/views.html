@@ -1,0 +1,31 @@
+<template name="menuleft">
+	<div class="bar bar-header bar-dark">
+		<h1 class="title">{{_ "app.menu"}}</h1>
+	</div>
+	<div class="content has-header">
+		<div class="list">
+			<div class="item item-icon-right" data-ion-menu-close>
+				{{_ "app.close-me"}} {{> ionIcon icon="ios-arrow-right"}}
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="menuright">
+	<div class="bar bar-header bar-dark">
+		<h1 class="title">{{_ "app.menu"}}</h1>
+	</div>
+	<div class="content has-header">
+		<div class="list">
+			<div id="home" class="item item-icon-left" data-ion-menu-close>
+				{{> ionIcon icon="home"}} {{_ "app.home"}}
+			</div>
+			<div id="profile" class="item item-icon-left" data-ion-menu-close>
+				{{> ionIcon icon="person"}} {{_ "app.profile"}}
+			</div>
+			<div id="logout" class="item item-icon-left">
+				{{> ionIcon icon="log-out"}} {{_ "app.logout"}}
+			</div>
+		</div>
+	</div>
+</template>

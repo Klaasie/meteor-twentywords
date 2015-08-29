@@ -1,0 +1,27 @@
+<template name="home">
+
+	{{#contentFor "headerTitle"}}
+		<h1 class="title"><img src="img/logo.png?v=0.2" /></h1>
+		<button class="button button-clear pull-right" data-ion-menu-toggle="right">
+			{{#if isAndroid}}
+				{{> ionIcon icon='android-more-vertical'}}
+			{{else}}
+				{{> ionIcon icon='navicon-round'}}
+			{{/if}}
+		</button>
+	{{/contentFor}}
+
+
+	{{#ionView}}
+		{{#ionContent}}
+			<div class="row">
+				<div class="col col-33 col-offset-34">
+					<button id="start" class="button button-block button-outline button-balanced">
+						{{_ "app.start"}}
+					</button>
+				</div>
+			</div>
+		{{/ionContent}}
+	{{/ionView}}
+
+</template>

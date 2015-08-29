@@ -1,0 +1,39 @@
+<template name="application">
+	{{#ionBody}}
+
+		{{#ionSideMenuContainer side="right"}}
+
+			{{#ionSideMenus}}
+
+				{{#ionSideMenu side="right"}}
+					{{> yield "nav-right"}}
+				{{/ionSideMenu}}
+
+			{{/ionSideMenus}}
+
+			{{#ionSideMenuContent}}
+
+				{{> ionNavBar class="bar-positive "}}
+
+				{{#ionNavView}}
+					{{> yield}}
+				{{/ionNavView}}
+
+			{{/ionSideMenuContent}}
+
+		{{/ionSideMenuContainer}}
+
+	{{/ionBody}}
+</template>
+
+<template name="applicationlogin">
+	{{#ionBody}}
+
+		{{> ionNavBar class="bar-positive "}}
+
+		{{#ionNavView}}
+			{{> yield}}
+		{{/ionNavView}}
+
+	{{/ionBody}}
+</template>

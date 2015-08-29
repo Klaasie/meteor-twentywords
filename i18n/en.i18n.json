@@ -1,0 +1,11 @@
+{
+	"app": {
+		"name": "Twenty Words",
+		"menu": "Menu",
+		"profile": "Profile",
+		"logout": "Log out"
+	},
+	"admin": {
+
+	}	
+}

@@ -1,0 +1,63 @@
+<template name="profile">
+
+	{{#contentFor "headerTitle"}}
+		<h1 class="title"><img src="img/logo.png?v=0.2" /></h1>
+		<button class="button button-clear pull-right" data-ion-menu-toggle="right">
+			{{#if isAndroid}}
+				{{> ionIcon icon='android-more-vertical'}}
+			{{else}}
+				{{> ionIcon icon='navicon-round'}}
+			{{/if}}
+		</button>
+	{{/contentFor}}
+
+
+	{{#ionView}}
+		{{#ionContent}}
+			<div class="row">
+				<div class="col col-33 col-offset-34">
+					{{> avatar user=user shape="circle"}}
+				</div>
+
+				<div class="list card">
+
+  <div class="item item-avatar">
+    <img src="mcfly.jpg">
+    <h2>Marty McFly</h2>
+    <p>November 05, 1955</p>
+  </div>
+
+  <div class="item item-body">
+    <img class="full-image" src="delorean.jpg">
+    <p>
+      This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+      the content is from a card-body consisting of an image and paragraph text. The footer
+      consists of tabs, icons aligned left, within the card-footer.
+    </p>
+    <p>
+      <a href="#" class="subdued">1 Like</a>
+      <a href="#" class="subdued">5 Comments</a>
+    </p>
+  </div>
+
+  <div class="item tabs tabs-secondary tabs-icon-left">
+    <a class="tab-item" href="#">
+      <i class="icon ion-thumbsup"></i>
+      Like
+    </a>
+    <a class="tab-item" href="#">
+      <i class="icon ion-chatbox"></i>
+      Comment
+    </a>
+    <a class="tab-item" href="#">
+      <i class="icon ion-share"></i>
+      Share
+    </a>
+  </div>
+
+</div>
+			</div>
+		{{/ionContent}}
+	{{/ionView}}
+
+</template>

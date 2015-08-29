@@ -1,0 +1,93 @@
+
+body {
+	font-family: Arial;
+}
+
+h1, h2, h3, h4, h5 {
+	margin: 0;
+	padding: 0;
+}
+
+/** Ionic overrides */
+.bar.bar-positive {
+	border-color: #040f19;
+	background-color: #082c4d;
+	background-image: linear-gradient(0deg, #082c4d, #082c4d 50%, transparent 50%);
+	color: #79BC6F;
+	opacity: .9;
+}
+
+.view {
+	background-color: rgba(201, 240, 255, 0.61);
+}
+
+body.login .view {
+	background-color: #fff;
+}
+
+.menu-right {
+	background-color: #444;
+}
+
+.menu-right .item {
+    background-color: #444;
+    border-color: #585858;
+    color: #fff;
+    cursor: pointer;
+}
+
+h1.title img {
+    height: 24px;
+    width: auto;
+}
+
+.platform-web h1.title img {
+    margin-top: 10px;
+}
+
+/** Page content */
+.page-content {
+	padding: 20px;
+}
+
+/** Profile page */
+.avatar {
+    height: 150px;
+    width: 150px;
+    position: relative;
+    margin: 0 auto;
+}
+
+/*Disabling platform specific tweaks */
+.platform-ios.platform-cordova:not(.fullscreen) .bar-header
+{
+  height: 44px !important;
+}
+.platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader)
+{
+  height: 44px !important;
+}
+
+.platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader).item-input-inset .item-input-wrapper
+{
+  margin-top: 0px !important;
+}
+
+.platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) > *
+{
+  margin-top: 0px !important;
+}
+
+.platform-ios.platform-cordova:not(.fullscreen) .tabs-top > .tabs, .platform-ios.platform-cordova:not(.fullscreen) .tabs.tabs-top
+{
+  top: 44px !important;
+}
+
+.platform-ios.platform-cordova:not(.fullscreen) .has-header, .platform-ios.platform-cordova:not(.fullscreen) .bar-subheader
+{
+  top: 44px !important;
+}
+
+.platform-ios.platform-cordova:not(.fullscreen) .has-subheader {
+  top: 88px !important;
+}
